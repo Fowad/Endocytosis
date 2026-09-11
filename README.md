@@ -31,15 +31,15 @@ In the ensemble simulations, the outer filaments push while the central filament
 
 The *Physical Review E* paper establishes the thermodynamic constraint linking the smooth interaction potential $U(r)$ to the instantaneous polymerization and depolymerization rates. In compact form,
 
-$$
+```math
 \frac{k_{\mathrm{on}}(r)}
 {k_{\mathrm{off}}(r-\delta)}
 =
 \exp\left(
 -\frac{U(r-\delta)-U(r)}{k_B T}
 \right)
-\frac{k^0_{\mathrm{on}}}{k^0_{\mathrm{off}}}.
-$$
+\frac{k^0_{\mathrm{on}}}{k^0_{\mathrm{off}}}
+```
 
 The later *Physical Biology* study uses this framework in a many-filament model of pulling-force generation. The public `2Dmain.cpp` snapshot is primarily associated with that ensemble study and implements the corresponding position-dependent rate prescription.
 
