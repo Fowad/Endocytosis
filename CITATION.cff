@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and the relevant associated publication(s)."
+title: "Endocytosis: Actin Filament–Membrane Interaction Simulations"
+type: software
+authors:
+  - family-names: Motahari
+    given-names: Fowad
+repository-code: "https://github.com/Fowad/Endocytosis"
+url: "https://github.com/Fowad/Endocytosis"
+date-released: 2026-09-11
+version: "archival-2026"
+keywords:
+  - actin polymerization
+  - endocytosis
+  - computational biophysics
+  - stochastic simulation
+  - Brownian dynamics
+  - mechanobiology
+  - MPI
+references:
+  - type: article
+    authors:
+      - family-names: Motahari
+        given-names: Fowad
+      - family-names: Carlsson
+        given-names: Anders E.
+    title: "Thermodynamically Consistent Treatment of the Growth of a Biopolymer in the Presence of a Smooth Obstacle Interaction Potential"
+    journal: "Physical Review E"
+    volume: 100
+    issue: 4
+    pages: "042409"
+    year: 2019
+    doi: "10.1103/PhysRevE.100.042409"
+  - type: article
+    authors:
+      - family-names: Motahari
+        given-names: Fowad
+      - family-names: Carlsson
+        given-names: Anders E.
+    title: "Pulling-Force Generation by Ensembles of Polymerizing Actin Filaments"
+    journal: "Physical Biology"
+    volume: 17
+    pages: "016005"
+    year: 2020
+    doi: "10.1088/1478-3975/ab59bd"
