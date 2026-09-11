@@ -29,16 +29,16 @@ In the ensemble simulations, the outer filaments push while the central filament
 
 ## Relationship between the two papers
 
-The *Physical Review E* paper establishes the thermodynamic constraint linking the smooth interaction potential \(U(r)\) to the instantaneous polymerization and depolymerization rates. In compact form,
+The *Physical Review E* paper establishes the thermodynamic constraint linking the smooth interaction potential $U(r)$ to the instantaneous polymerization and depolymerization rates. In compact form,
 
 $$
 \frac{k_{\mathrm{on}}(r)}
 {k_{\mathrm{off}}(r-\delta)}
 =
-\exp\left[
+\exp\left(
 -\frac{U(r-\delta)-U(r)}{k_B T}
-\right]
-\frac{k^0_{\mathrm{on}}}{k^0_{\mathrm{off}}}
+\right)
+\frac{k^0_{\mathrm{on}}}{k^0_{\mathrm{off}}}.
 $$
 
 The later *Physical Biology* study uses this framework in a many-filament model of pulling-force generation. The public `2Dmain.cpp` snapshot is primarily associated with that ensemble study and implements the corresponding position-dependent rate prescription.
@@ -66,7 +66,7 @@ The main source uses MPI and C++11 features. A typical compile command is:
 mpic++ -O2 -std=c++11 2Dmain.cpp -o endocytosis_sim
 ```
 
-**Important:** the checked-in source is a historical production-scale research program, not a short example. Its default configuration uses \(2\times10^{10}\) timesteps, corresponding to a 10 s simulated trajectory at \(\Delta t=5\times10^{-10}\) s. Do not start a full run casually.
+**Important:** the checked-in source is a historical production-scale research program, not a short example. Its default configuration uses $2\times10^{10}$ timesteps, corresponding to a 10 s simulated trajectory at $\Delta t=5\times10^{-10}$ s. Do not start a full run casually.
 
 The current parameter table explicitly defines parameter sets for MPI ranks **0 through 13**. See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) before attempting a run.
 
