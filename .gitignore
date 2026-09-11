@@ -1,0 +1,55 @@
+# macOS / editors
+.DS_Store
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# C/C++ build products
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+a.out
+endocytosis_sim
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated simulation run directories
+Run[0-9][0-9]/
+
+# Common generated output files if produced at repository root
+Parameters.txt
+Scaled_zdata.txt
+Time_Course.txt
+F_pulling_vs_time.txt
+F_pushing_vs_time.txt
+F_total_vs_time.txt
+Gel_deformation_avg_in_time.txt
+Edge_deformation_avg_in_time.txt
+dz_elas_*_vs_time.txt
+k_on.txt
+k_off.txt
+Force_Dist.txt
+Force_Dist_Symmetrized.txt
+Force_Dist_Row_*.txt
+Gel_Deformation_Dist.txt
+F_ext_vs_v_memb.txt
+F_ext_vs_v_fil.txt
+Data.txt
+Num_subunits_*.txt
+dz_elas_*.txt
+dz_bend_*.txt
+Force_vs_time_*.txt
+r_*.txt
+
+# Generated plots
+*.png
+*.svg
